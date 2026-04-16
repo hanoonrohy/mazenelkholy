@@ -1,29 +1,31 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #3b0a05;
+    background: #0b1e2d;
     color: white;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 15px;
-    background: #2b0603;
+    background: #081521;
 }
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 8px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #ffb347;
+    color: #4da6ff;
 }
 
 /* Card */
 .card {
-    background: #4a0d07;
+    background: #102a43;
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
@@ -37,17 +39,17 @@ table {
 }
 
 th {
-    background: #5c120a;
+    background: #163d5c;
 }
 
 td, th {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #ccc;
 }
 
 tr:hover {
-    background: #61160d;
+    background: #1c4d70;
 }
 
 /* Form */
@@ -58,10 +60,10 @@ form {
 
 input, textarea {
     margin: 8px 0;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     border: none;
-    background: #2f2f2f;
+    background: #1f2e3a;
     color: white;
 }
 
@@ -70,17 +72,40 @@ button {
     padding: 12px;
     border: none;
     border-radius: 10px;
-    background: #888;
-    color: white;
+    background: #4da6ff;
+    color: black;
+    font-weight: bold;
 }
 
 button:hover {
-    background: #ffb347;
-    color: black;
+    background: #82c4ff;
 }
 
 /* Footer */
 footer {
     text-align: center;
     margin: 20px;
+}
+
+/* 📱 Responsive (المهم عشان الموبايل) */
+@media (max-width: 600px) {
+
+    .card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px;
+    }
 }
