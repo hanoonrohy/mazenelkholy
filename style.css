@@ -1,15 +1,16 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #0b1e2d;
-    color: white;
+    background: #eef2f3;
+    color: #333;
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 15px;
-    background: #081521;
+    background: #2d6a4f;
+    color: white;
 }
 
 nav a {
@@ -20,12 +21,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #4da6ff;
+    color: #d8f3dc;
 }
 
 /* Card */
 .card {
-    background: #102a43;
+    background: white;
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
@@ -39,17 +40,18 @@ table {
 }
 
 th {
-    background: #163d5c;
+    background: #40916c;
+    color: white;
 }
 
 td, th {
-    padding: 12px;
+    padding: 10px;
     text-align: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
 }
 
 tr:hover {
-    background: #1c4d70;
+    background: #f1f1f1;
 }
 
 /* Form */
@@ -60,11 +62,9 @@ form {
 
 input, textarea {
     margin: 8px 0;
-    padding: 12px;
+    padding: 10px;
     border-radius: 10px;
-    border: none;
-    background: #1f2e3a;
-    color: white;
+    border: 1px solid #ccc;
 }
 
 button {
@@ -72,13 +72,13 @@ button {
     padding: 12px;
     border: none;
     border-radius: 10px;
-    background: #4da6ff;
-    color: black;
+    background: #2d6a4f;
+    color: white;
     font-weight: bold;
 }
 
 button:hover {
-    background: #82c4ff;
+    background: #40916c;
 }
 
 /* Footer */
@@ -87,16 +87,12 @@ footer {
     margin: 20px;
 }
 
-/* 📱 Responsive (المهم عشان الموبايل) */
+/* 📱 Responsive */
 @media (max-width: 600px) {
 
     .card {
         margin: 10px;
         padding: 15px;
-    }
-
-    table, th, td {
-        font-size: 14px;
     }
 
     nav {
@@ -107,5 +103,10 @@ footer {
 
     nav a {
         margin: 5px;
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 14px;
     }
 }
